@@ -9,7 +9,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,26 +17,20 @@ body {
   font-weight: 400; /* Sets the font weight to 400 */
   font-size: 16px; /* Sets the font size to 16px */
   line-height: 1.6; /* Sets the line-height to 1.6 */
-} 
+}
 
 h1 {
-  /* Sets the font size to 30px */
   font-size: 30px;
-  /* Sets the font weight to 700 */
   font-weight: 700;
 }
 
 h2 {
-  /* Sets the font size to 24px */
   font-size: 24px;
-  /* Sets the font weight to 700 */
   font-weight: 700;
 }
 
 h3 {
-  /* Sets the font size to 18px */
   font-size: 18px;
-  /* Sets the font weight to 700 */
   font-weight: 700;
 }
 
@@ -44,8 +38,8 @@ a {
   color: #357b70;
 }
 
-a:hover, a:focus {
-  /* No underlining when hovering over a link */
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
