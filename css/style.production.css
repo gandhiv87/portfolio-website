@@ -9,7 +9,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -40,12 +40,13 @@ a {
 
 a:hover,
 a:focus {
+  /* No underlining when hovering over a link */
   text-decoration: none;
 }
 
 a:visited {
   /* visited link */
-  color: #8B0000;
+  color: #8b0000;
 }
 
 a:active {
@@ -54,19 +55,14 @@ a:active {
 }
 
 .button {
-  /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-  /* takes the font from the outer container */
   font-family: inherit;
-  /* styles the background color, font color, and text decoration of the button */
-  background-color: #6B8E23;
+  background-color: #6b8e23;
   color: white;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.2s opacity;
        -o-transition-duration: 0.2s opacity;
@@ -74,34 +70,30 @@ a:active {
 }
 
 button {
-  /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-  /* takes the font from the outer container */
   font-family: inherit;
-  /* styles the background color, font color, and text decoration of the button */
-  background-color: #6B8E23;
+  background-color: #6b8e23;
   color: white;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.2s opacity;
        -o-transition-duration: 0.2s opacity;
           transition-duration: 0.2s opacity;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   cursor: pointer;
-  /* reduces the opacity of the button to 80% */
   opacity: 0.7;
 }
 
 .button_secondary {
-  background-color: #DAA520;
+  background-color: #daa520;
   color: #2b2b2b;
 }
 
@@ -193,10 +185,12 @@ button:hover, button:focus, .button:hover, .button:focus {
   .grid {
     grid-gap: 10px;
   }
-  .grid_item:last-child {
+
+  .grid_item: last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -206,9 +200,11 @@ button:hover, button:focus, .button:hover, .button:focus {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -218,9 +214,11 @@ button:hover, button:focus, .button:hover, .button:focus {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -244,6 +242,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     -webkit-transform: translate(0, 50px);
             transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
             transform: translate(200px, 50px);
@@ -255,6 +254,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     -webkit-transform: translate(0, 50px);
             transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
             transform: translate(200px, 50px);
@@ -279,6 +279,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     -webkit-transform: translate(446px, 48px);
             transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
             transform: translate(100px, 48px);
@@ -290,6 +291,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     -webkit-transform: translate(446px, 48px);
             transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
             transform: translate(100px, 48px);
